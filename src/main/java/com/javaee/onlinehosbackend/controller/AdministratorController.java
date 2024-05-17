@@ -82,14 +82,4 @@ public class AdministratorController {
         return ResponseEntity.created(URI.create("/api/administrators/" + newAdmin.getAdministratorId())).body(newAdmin);
     }
 
-    @PutMapping("/update")
-    @CrossOrigin
-    public ResponseEntity<?> updateAdministrator(@RequestBody Administrator administrator) {
-        try {
-            Administrator updatedAdmin = administratorService.updateAdministrator(administrator);
-            return ResponseEntity.ok(updatedAdmin);
-        } catch (EntityNotFoundException e) {
-            return ResponseEntity.notFound().build();
-        }
-    }
 }
