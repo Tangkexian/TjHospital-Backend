@@ -14,9 +14,9 @@ public class AdministratorResponse {
 
     private boolean Gender;
 
-    private String Contact;
-
     private String Password;
+
+    private String Contact;
 
     public boolean getGender() {
         return this.Gender;
