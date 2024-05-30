@@ -38,8 +38,7 @@ public class DoctorService {
     public boolean resetDoctorPassword(String adminId, String newPassword) {
         Doctor doctor = doctorRepository.findById(adminId).orElse(null);
         if (doctor != null) {
-            doctor.setPassword(newPassword);
-            // 假设 setPassword 方法用于更新密码
+            doctor.setPassword(newPassword); // 假设 setPassword 方法用于更新密码
             doctorRepository.save(doctor);
             return true;
         }
