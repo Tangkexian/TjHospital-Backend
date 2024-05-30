@@ -1,9 +1,6 @@
 package com.javaee.onlinehosbackend.dto;
 
-import com.javaee.onlinehosbackend.entity.Doctor;
-import com.javaee.onlinehosbackend.entity.Patient;
-import com.javaee.onlinehosbackend.entity.PrescriptionMedicine;
-import com.javaee.onlinehosbackend.entity.TreatmentRecord2;
+import com.javaee.onlinehosbackend.entity.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

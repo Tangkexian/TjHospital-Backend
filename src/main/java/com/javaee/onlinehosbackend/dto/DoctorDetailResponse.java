@@ -12,10 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DoctorDetailResponse {
-    // 医生实体
-    private Doctor doctor;
-    // 挂号费
-    private int registrationFee;
-    // 门诊信息列表
-    private List<ConsultationInfo> consultationInfos;
+    private Doctor doctor; // 医生实体
+    private int registrationFee; // 挂号费
+    private List<ConsultationInfo> consultationInfos; // 门诊信息列表
 }

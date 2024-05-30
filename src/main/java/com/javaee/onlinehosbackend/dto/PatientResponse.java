@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ResetPasswordInputRequest {
-    private String id;
-    private String newPassword;
+public class PatientResponse {
+    private String userid;
+    private String username;
 }

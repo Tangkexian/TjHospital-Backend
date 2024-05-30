@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @Data
 @NoArgsConstructor
@@ -13,10 +14,7 @@ public class ConsultationInfoResponse {
     private String doctorId;
     private String doctorName;
     private String clinicName;
-
-    // 格式化为所需日期格式
-    private LocalDateTime date;
-
+    private LocalDateTime date; // 格式化为所需日期格式
     private String startTime;
     private String endTime;
 }

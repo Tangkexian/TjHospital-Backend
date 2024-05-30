@@ -1,5 +1,6 @@
 package com.javaee.onlinehosbackend.dto;
 
+import com.javaee.onlinehosbackend.entity.ConsultationInfo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
