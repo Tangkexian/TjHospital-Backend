@@ -10,9 +10,6 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-/**
- * @author WWWsy
- */
 @Getter
 @Setter
 @Embeddable
@@ -29,12 +26,8 @@ public class ChatrecordId implements Serializable {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) {
-            return false;
-        }
+        if (this == o) return true;
+        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
         ChatrecordId entity = (ChatrecordId) o;
         return Objects.equals(this.doctorId, entity.doctorId) &&
                 Objects.equals(this.patientId, entity.patientId) &&

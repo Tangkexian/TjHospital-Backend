@@ -6,19 +6,14 @@ import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.Hibernate;
 
-import java.io.Serial;
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.Objects;
 
-/**
- * @author WWWsy
- */
 @Getter
 @Setter
 @Embeddable
 public class ConsultationInfoId implements Serializable {
-
     private static final long serialVersionUID = -1822417099362462417L;
     @Column(name = "DOCTOR_ID", nullable = false, length = 10)
     private String doctorId;
@@ -44,12 +39,8 @@ public class ConsultationInfoId implements Serializable {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) {
-            return false;
-        }
+        if (this == o) return true;
+        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
         ConsultationInfoId entity = (ConsultationInfoId) o;
         return Objects.equals(this.clinicName, entity.clinicName) &&
                 Objects.equals(this.dateTime, entity.dateTime) &&

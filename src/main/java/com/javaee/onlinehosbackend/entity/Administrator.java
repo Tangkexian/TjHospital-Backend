@@ -9,9 +9,6 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
-/**
- * @author WWWsy
- */
 @Getter
 @Setter
 @Entity
